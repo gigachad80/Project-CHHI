@@ -1,1 +1,125 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Helping Hub International</title>
+    <meta name="description" content="Your global resource for cyber world links by country.">
+    <meta name="keywords"
+        content="project chhi , chhi , project-cshi , cshi , cyber Sahayta hub india , , cyber helping hub international ,  ethical hacking, privacy, cybercrime , cybercrime portals, web development, open source, links, resources, Cyber Sahayta Hub India,  Cyber, India ,International "">
+    <link rel=" shortcut icon" href="https://placehold.co/16x16/000000/FFFFFF?text=CH" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white min-h-screen flex flex-col">
+
+    <header class="absolute top-0 z-20 flex h-[60px] w-full bg-opacity-0 px-[5%] lg:justify-around items-center">
+        <a id="home-logo-link" class="h-[50px] w-[50px] p-[4px] cursor-pointer" href="#">
+            <img src="https://placehold.co/50x50/FFFFFF/000000?text=CH" alt="Cyber Helping Hub Logo"
+                class="object-contain h-full w-full rounded">
+        </a>
+        <div class="flex-grow flex justify-end lg:justify-center items-center relative">
+            <div class="hidden lg:flex items-center bg-gray-800 rounded-full px-4 py-2 mr-4">
+                <input type="text" id="country-search-lg" placeholder="Search countries..."
+                    class="bg-transparent outline-none text-white w-64">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+            <div id="country-search-dropdown-lg" class="hidden lg:block">
+                <ul>
+                </ul>
+            </div>
+
+            <button id="hamburger-btn" class="text-3xl text-white lg:hidden focus:outline-none" aria-label="menu">
+                &#9776;
+            </button>
+        </div>
+
+        <div id="country-menu" class="country-list absolute top-[60px] right-0 w-full bg-gray-900 lg:hidden shadow-md">
+            <div class="p-4">
+                <div class="flex items-center bg-gray-800 rounded-full px-4 py-2 mb-4">
+                    <input type="text" id="country-search-sm" placeholder="Search countries..."
+                        class="bg-transparent outline-none text-white w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <ul id="country-list-mobile" class="flex flex-col gap-2 text-gray-300">
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section relative flex flex-col items-center w-full overflow-hidden p-8 text-center mt-[60px]">
+        <div id="initial-hero-content" class="flex flex-col gap-6 w-full max-w-4xl">
+            <h1 class="text-6xl font-semibold uppercase leading-[80px] max-lg:text-4xl max-md:leading-snug aurora-text">
+                Cyber Helping Hub<br>International
+            </h1>
+            <p class="mt-4 max-w-2xl text-gray-300 text-lg mx-auto">
+                Your central directory for cyber resources and links from around the globe, organized by country. Search
+                or select a country to find relevant information.
+            </p>
+
+            <div class="mt-16 text-left">
+                <h2 class="text-4xl font-semibold mb-8 text-center">Explore Global Cyber Resources</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 rounded-lg p-6">
+                        <h3 class="text-2xl font-semibold mb-4">What We Offer</h3>
+                        <p class="text-gray-300">
+                            The Cyber Helping Hub International provides a curated list of essential cyber-related
+                            resources for various countries. Find official government cybersecurity agencies, data
+                            privacy information, reporting mechanisms for cybercrime, and more.
+                        </p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6">
+                        <h3 class="text-2xl font-semibold mb-4">How to Use</h3>
+                        <p class="text-gray-300">
+                            Simply use the search bar or the hamburger menu to find and select a country. Once a country
+                            is chosen, you will see a list of relevant cyber portals and links specific to that region,
+                            presented in easy-to-read cards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="country-content" class="w-full max-w-4xl flex flex-col items-center opacity-0 hidden pt-8">
+        </div>
+    </section>
+
+    <footer class="mt-auto flex flex-col w-full items-center gap-4 p-[5%] px-[18%] text-white">
+        <div class="flex flex-col gap-4 items-center">
+            <h2 class="text-3xl max-md:text-xl">Contact Us</h2>
+            <div class="flex gap-6 text-2xl">
+                <a href="https://github.com" class="text-white hover:text-cyan-400 active:text-blue-500"
+                    aria-label="GitHub Repository" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:YOUR_EMAIL@example.com" class="text-white hover:text-cyan-400 active:text-blue-500"
+                    aria-label="Email Address">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w-full text-center text-gray-500 text-sm mt-4">
+            © 2025 Cyber Helping Hub International
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
