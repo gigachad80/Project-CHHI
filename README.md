@@ -49,7 +49,7 @@ Instead of having to search for each specific portal individually (like the cybe
 ### 💓 Credits:
 
 
- * #### No One right now . Will credit if someone suggest or contribute any links .
+ * #### No One right now . Will credit if someone suggest or contribute any links . Right now it supports only Germany, UK ,US , Canada, Japan .
 
 ### 📞 Contact
 
