@@ -16,7 +16,7 @@
 
 Project - C(Cyber) H(Helping) H(Hub) I(Iternational). 
 
-Also you can say it as an International version of [Project-CHSI](https://project-cshi.netlify.app/) which is also developed by me🫠
+Also you can say it as an International version of [Project-CSHI](https://project-cshi.netlify.app/) which is also developed by me🫠
 
 
 ### ⌚ Total Time taken to develop & test
