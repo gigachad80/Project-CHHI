@@ -49,7 +49,7 @@ Instead of having to search for each specific portal individually (like the cybe
 ### 💓 Credits:
 
 
- * #### No One right now . Will credit if someone suggest or contribute any links . Right now it supports only Germany, UK ,US , Canada, Japan .
+ * #### No One right now . Will credit if someone suggest or contribute any links . Right now it supports only Germany, UK ,US , Canada, Japan . If you want to contribute , here's the guide : [CONTRIBUTING.md](https://github.com/gigachad80/Project-CHHI/blob/main/CONTRIBUTING.md)
 
 ### 📞 Contact
 
