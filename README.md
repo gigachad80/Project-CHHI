@@ -21,7 +21,7 @@ Also you can say it as an International version of [Project-CSHI](https://projec
 
 ### ⌚ Total Time taken to develop & test
 
- 4 hour
+ 4 hour 5 min
 
 ### 🙃Why I Created This
 
